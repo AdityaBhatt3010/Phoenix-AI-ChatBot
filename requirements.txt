@@ -1,0 +1,11 @@
+langchain
+langchain_community
+langchain_huggingface
+sentence-transformers
+huggingface_hub
+faiss-cpu
+dotenv
+pyfiglet
+termcolor
+ipywidgets
+pypdf
