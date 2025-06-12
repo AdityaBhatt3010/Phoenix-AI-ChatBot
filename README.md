@@ -1,4 +1,4 @@
-# 🤖 Universal AI Chatbot using RAG + FAISS
+# 🤖 Universal AI Chatbot (RAG + FAISS + LangChain)
 
 A **domain-adaptable AI chatbot framework** built using **Retrieval-Augmented Generation (RAG)**, **FAISS**, and **LangChain**, capable of answering questions from **custom document-based knowledge** like cybersecurity books, medical encyclopedias, and more.
 
