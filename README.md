@@ -240,15 +240,21 @@ Generated files:
 ## 🔁 Visual Pipeline
 
 ```mermaid
-graph LR
+graph TD
 A[PDF Files in /data] --> B[Text Chunking]
-B --> C[Embedding with MiniLM-L6-v2]
-C --> D[Store in FAISS Vector DB]
-E[User Query] --> F[Embed Query]
-F --> G[Search Top-k Relevant Chunks]
-G --> H[Pass with Prompt to Mistral-7B]
-H --> I[Answer Generated]
-I --> J[Display in Chat Loop]
+B --> C[Embedding Chunks with MiniLM-L6-v2]
+C --> D[Store Embeddings in FAISS Vector DB]
+
+E[User Query] --> F[Embed Query with MiniLM-L6-v2]
+F --> G[Semantic Search in FAISS]
+D --> G
+
+G --> H[Retrieve Top-k Relevant Chunks]
+
+H --> I[Insert Context into Prompt Template]
+I --> J[Mistral-7B-Instruct-v0.3]
+J --> K[Answer Generated]
+K --> L[Display Answer in Chat Loop]
 ```
 
 ---
