@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual Environments
+venv/
+.env/
+.venv/
+env/
+ENV/
+
+# Dependency Logs
+pip-log.txt
+pip-delete-this-directory.txt
+poetry.lock
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# FAISS Index & VectorStore
+vectorstore/
+index.faiss
+index.pkl
+
+# HuggingFace / LangChain Secrets
+*.env
+.env.*
+token.json
+
+# PDF Data
+data/*.pdf
+
+# OS & Editor-specific
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*.bak
+
+# Model Caches
+__huggingface__/
+.cache/
+transformers_cache/
+datasets_cache/
+hub/
+
+# Log Files
+*.log
+*.out
+*.err
+
+# VSCode Settings
+.vscode/
+
+# PyTest & Coverage
+htmlcov/
+.tox/
+.cache/
+.pytest_cache/
+coverage.xml
+*.cover
+*.py,cover
+
+# Build Artifacts
+build/
+dist/
+*.egg-info/
+*.spec
