@@ -4,6 +4,8 @@ A **domain-adaptable AI chatbot framework** built using **Retrieval-Augmented Ge
 
 This project supports both research (via Jupyter Notebooks) and production deployment (via Python scripts).
 
+![Universal AI ChatBot Cover](https://github.com/user-attachments/assets/ecec53e7-687f-411f-bd3f-b0858e324d11) <br/>
+
 ---
 
 ## 📌 Table of Contents
