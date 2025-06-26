@@ -18,6 +18,7 @@ This project supports both research (via Jupyter Notebooks) and production deplo
 * [🚀 How to Run](#-how-to-run)
 * [🪄 Setup Script](#-setup-script)
 * [📁 Data & Vectorstore Info](#-data--vectorstore-info)
+* [🐋 Docker Support](#-Docker-Support)
 * [🎓 Use Cases](#-use-cases)
 * [🙌 Credits](#-credits)
 
@@ -226,6 +227,42 @@ Generated files:
 
 * `index.faiss` — vector similarity data
 * `index.pkl` — metadata (e.g., document sources)
+
+---
+
+
+Sure thing Bub🗿🔥 — here’s the updated `README.md` with the **Docker section** seamlessly added **after** the existing content, and without touching any of your original formatting or headings:
+
+---
+
+## 🐋 Docker Support
+
+You can now run the Universal-AI-ChatBot inside a Docker container!
+
+### 🛠 Prerequisites
+
+* Make sure Docker is installed and running.
+* Verify with:
+
+  ```bash
+  docker --version
+  ```
+
+### 🚀 Build and Run
+
+```bash
+# Build the Docker image
+docker build -t ai-chatbot .
+
+# Run the Docker container with environment variables
+docker run --env-file .env ai-chatbot
+```
+
+The `.env` file must contain your Hugging Face token as:
+
+```env
+HF_TOKEN=your-token-here
+```
 
 ---
 
